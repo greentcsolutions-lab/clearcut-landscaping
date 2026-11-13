@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roof Cleaning, Lawn Care & Landscaping in Vancouver WA & Portland OR | Clear Cut Landscaping</title>
+  <meta name="description" content="Moss-covered roofs, overgrown hedges, and messy yards fixed fast. Local family-owned team. Free estimates. Call (971) 319-4486.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --green:#1a7a32;
+      --green-dark:#145c26;
+      --green-light:#e8f5e9;
+      --orange:#e65100;
+      --orange-dark:#bf360c;
+      --text:#1a1a1a;
+      --muted:#555;
+      --bg:#fff;
+      --alt:#f4f7f4;
+      --border:#e0e0e0;
+      --radius:10px;
+      --shadow:0 4px 14px rgba(0,0,0,.1);
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+    .w{width:min(1100px,92%);margin:0 auto}
+    .narrow{width:min(680px,92%);margin:0 auto}
+
+    /* Sticky top bar — conversion only */
+    .topbar{
+      position:sticky;top:0;z-index:100;
+      background:var(--green);color:#fff;
+      padding:10px 0;
+      box-shadow:0 2px 8px rgba(0,0,0,.15);
+    }
+    .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .topbar .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem}
+    .topbar .brand img{width:42px;height:auto}
+    .topbar .phone{
+      display:inline-flex;align-items:center;gap:8px;
+      background:var(--orange);color:#fff;font-weight:800;
+      padding:10px 18px;border-radius:8px;font-size:1.05rem;
+      white-space:nowrap;transition:background .15s;
+    }
+    .topbar .phone:hover{background:var(--orange-dark)}
+    .topbar .phone svg{width:20px;height:20px;flex-shrink:0}
+
+    /* Hero */
+    .hero{
+      background:linear-gradient(160deg,#0d3d18 0%,#1a7a32 55%,#2e8b3a 100%);
+      color:#fff;padding:36px 0 42px;text-align:center;
+    }
+    .hero h1{
+      font-size:clamp(1.7rem,5vw,2.55rem);font-weight:800;
+      line-height:1.18;margin-bottom:12px;letter-spacing:-.02em;
+    }
+    .hero .sub{
+      font-size:clamp(1.05rem,2.8vw,1.25rem);opacity:.95;
+      max-width:560px;margin:0 auto 22px;font-weight:500;
+    }
+    .hero-cta{display:flex;flex-direction:column;align-items:center;gap:12px;margin-bottom:18px}
+    .btn-call{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      background:var(--orange);color:#fff;font-weight:800;
+      font-size:clamp(1.2rem,4vw,1.45rem);
+      padding:18px 32px;border-radius:12px;
+      box-shadow:0 6px 20px rgba(230,81,0,.4);
+      transition:transform .12s,background .15s;
+      width:min(100%,380px);
+    }
+    .btn-call:hover{background:var(--orange-dark);transform:translateY(-1px)}
+    .btn-call svg{width:24px;height:24px}
+    .btn-secondary{
+      display:inline-flex;align-items:center;justify-content:center;
+      background:rgba(255,255,255,.15);color:#fff;font-weight:700;
+      font-size:1rem;padding:14px 24px;border-radius:10px;
+      border:2px solid rgba(255,255,255,.5);
+      width:min(100%,380px);transition:background .15s;
+    }
+    .btn-secondary:hover{background:rgba(255,255,255,.25)}
+    .trust-row{
+      display:flex;flex-wrap:wrap;justify-content:center;gap:14px 22px;
+      font-size:.9rem;font-weight:600;opacity:.95;
+    }
+    .trust-row span{display:inline-flex;align-items:center;gap:5px}
+
+    /* Magic 3 */
+    .benefits{background:var(--alt);padding:36px 0}
+    .benefits h2{text-align:center;font-size:1.35rem;font-weight:800;margin-bottom:22px}
+    .b-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .b-card{
+      background:#fff;border-radius:var(--radius);padding:22px 18px;
+      text-align:center;box-shadow:var(--shadow);border:1px solid var(--border);
+    }
+    .b-card .icon{font-size:1.8rem;margin-bottom:8px}
+    .b-card h3{font-size:1.05rem;font-weight:800;margin-bottom:6px;color:var(--green-dark)}
+    .b-card p{font-size:.92rem;color:var(--muted);line-height:1.4}
+
+    /* Social proof bar */
+    .proof-bar{
+      background:#fff;padding:18px 0;border-bottom:1px solid var(--border);
+      text-align:center;
+    }
+    .proof-bar .inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:18px 28px}
+    .stars{color:#f9a825;font-size:1.25rem;letter-spacing:1px}
+    .proof-bar strong{font-weight:800}
+    .bbb{display:flex;align-items:center;gap:8px;font-size:.9rem;font-weight:600}
+    .bbb img{height:32px;width:auto}
+
+    /* Before / After */
+    .gallery{padding:40px 0}
+    .gallery h2{text-align:center;font-size:1.45rem;font-weight:800;margin-bottom:8px}
+    .gallery .intro{text-align:center;color:var(--muted);margin-bottom:26px;font-size:1rem}
+    .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:28px}
+    .ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .ba-item{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow)}
+    .ba-item img{width:100%;aspect-ratio:4/3;object-fit:cover}
+    .ba-label{
+      position:absolute;bottom:8px;left:8px;
+      background:rgba(0,0,0,.7);color:#fff;font-size:.75rem;font-weight:700;
+      padding:3px 9px;border-radius:4px;text-transform:uppercase;letter-spacing:.03em;
+    }
+    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .work-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;box-shadow:var(--shadow)}
+
+    /* Services */
+    .services{background:var(--alt);padding:40px 0}
+    .services h2{text-align:center;font-size:1.45rem;font-weight:800;margin-bottom:22px}
+    .s-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .s-card{
+      background:#fff;border-radius:var(--radius);padding:18px 16px;
+      border:1px solid var(--border);display:flex;align-items:flex-start;gap:12px;
+    }
+    .s-card .dot{width:10px;height:10px;border-radius:50%;background:var(--green);flex-shrink:0;margin-top:6px}
+    .s-card h3{font-size:1rem;font-weight:700;margin-bottom:2px}
+    .s-card p{font-size:.88rem;color:var(--muted)}
+
+    /* Reviews */
+    .reviews{padding:40px 0}
+    .reviews h2{text-align:center;font-size:1.45rem;font-weight:800;margin-bottom:8px}
+    .reviews .rating{text-align:center;margin-bottom:24px;font-size:1.05rem}
+    .r-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .r-card{
+      background:var(--alt);border-radius:var(--radius);padding:20px;
+      border:1px solid var(--border);
+    }
+    .r-card .stars{font-size:1rem;margin-bottom:8px}
+    .r-card p{font-size:.95rem;margin-bottom:12px;line-height:1.45}
+    .r-card .who{font-weight:700;font-size:.9rem}
+
+    /* About / Owner */
+    .about{background:var(--alt);padding:40px 0}
+    .about .split{display:grid;grid-template-columns:120px 1fr;gap:22px;align-items:center}
+    .about .owner-img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--green)}
+    .about h2{font-size:1.3rem;font-weight:800;margin-bottom:8px}
+    .about p{font-size:.98rem;color:var(--muted);margin-bottom:8px}
+    .about .truck{margin-top:22px;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+    .about .truck img{width:100%;aspect-ratio:16/7;object-fit:cover}
+
+    /* Form section */
+    .form-sec{padding:44px 0 50px;background:linear-gradient(160deg,#0d3d18 0%,#1a7a32 100%);color:#fff}
+    .form-sec h2{text-align:center;font-size:1.5rem;font-weight:800;margin-bottom:6px}
+    .form-sec .sub{text-align:center;opacity:.9;margin-bottom:24px;font-size:1.05rem}
+    .form-wrap{
+      background:#fff;color:var(--text);border-radius:14px;
+      padding:28px 24px;max-width:480px;margin:0 auto;
+      box-shadow:0 12px 40px rgba(0,0,0,.25);
+    }
+    .form-wrap label{display:block;font-weight:600;font-size:.9rem;margin-bottom:4px}
+    .form-wrap input,.form-wrap select,.form-wrap textarea{
+      width:100%;padding:12px 14px;border:1.5px solid #ccc;border-radius:8px;
+      font-size:1rem;font-family:inherit;margin-bottom:14px;
+      transition:border-color .15s;
+    }
+    .form-wrap input:focus,.form-wrap select:focus,.form-wrap textarea:focus{
+      outline:none;border-color:var(--green);
+    }
+    .form-wrap textarea{min-height:80px;resize:vertical}
+    .form-wrap .btn-submit{
+      width:100%;background:var(--orange);color:#fff;font-weight:800;
+      font-size:1.15rem;padding:16px;border:none;border-radius:10px;
+      cursor:pointer;transition:background .15s;
+    }
+    .form-wrap .btn-submit:hover{background:var(--orange-dark)}
+    .form-note{text-align:center;font-size:.85rem;color:var(--muted);margin-top:12px}
+    .or-call{text-align:center;margin-top:22px}
+    .or-call p{margin-bottom:10px;font-weight:600;opacity:.95}
+    .or-call .btn-call{width:min(100%,340px)}
+
+    /* Footer */
+    footer{background:#111;color:#ccc;padding:28px 0;text-align:center;font-size:.9rem}
+    footer strong{color:#fff}
+    footer a{color:#fff;text-decoration:underline}
+    footer .links{margin-top:10px;font-size:.85rem}
+
+    /* Mobile sticky call bar */
+    .mobile-bar{
+      display:none;position:fixed;bottom:0;left:0;right:0;z-index:99;
+      background:var(--orange);padding:12px 16px;
+      box-shadow:0 -4px 16px rgba(0,0,0,.2);
+    }
+    .mobile-bar a{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      color:#fff;font-weight:800;font-size:1.2rem;
+    }
+    .mobile-bar svg{width:22px;height:22px}
+
+    @media(max-width:768px){
+      .b-grid{grid-template-columns:1fr}
+      .ba-grid{grid-template-columns:1fr}
+      .work-grid{grid-template-columns:1fr 1fr}
+      .about .split{grid-template-columns:1fr;text-align:center;justify-items:center}
+      .topbar .brand span{display:none}
+      .hero{padding:28px 0 34px}
+      body{padding-bottom:64px}
+      .mobile-bar{display:block}
+    }
+    @media(max-width:480px){
+      .work-grid{grid-template-columns:1fr}
+      .ba-pair{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky conversion header -->
+  <div class="topbar">
+    <div class="w inner">
+      <div class="brand">
+        <img src="logo.webp" alt="Clear Cut Landscaping" width="42" height="32">
+        <span>Clear Cut Landscaping</span>
+      </div>
+      <a class="phone" href="tel:+19713194486">
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        (971) 319-4486
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO — Direct response -->
+    <section class="hero">
+      <div class="w">
+        <h1>Mossy Roofs, Overgrown Yards &amp; Dirty Gutters Fixed Fast in Vancouver &amp; Portland</h1>
+        <p class="sub">Local family-owned crew. Same-week service. Free estimates. Licensed, bonded &amp; insured.</p>
+
+        <div class="hero-cta">
+          <a class="btn-call" href="tel:+19713194486">
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            CALL NOW — (971) 319-4486
+          </a>
+          <a class="btn-secondary" href="#quote">Get a Free Estimate</a>
+        </div>
+
+        <div class="trust-row">
+          <span>★★★★★ 5.0 Google (14 reviews)</span>
+          <span>✓ BBB Accredited</span>
+          <span>✓ Licensed &amp; Insured</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Magic 3 Benefits -->
+    <section class="benefits">
+      <div class="w">
+        <h2>Why homeowners call us first</h2>
+        <div class="b-grid">
+          <div class="b-card">
+            <div class="icon">⚡</div>
+            <h3>Fast Turnaround</h3>
+            <p>Most jobs start within days, not weeks. We show up when we say we will.</p>
+          </div>
+          <div class="b-card">
+            <div class="icon">💰</div>
+            <h3>Fair, Upfront Pricing</h3>
+            <p>Clear quotes before any work begins. No surprise charges after the job.</p>
+          </div>
+          <div class="b-card">
+            <div class="icon">🛡️</div>
+            <h3>Licensed, Bonded &amp; Insured</h3>
+            <p>Family-owned. BBB Accredited. Your property is protected every step.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof bar -->
+    <div class="proof-bar">
+      <div class="w inner">
+        <div>
+          <span class="stars">★★★★★</span>
+          <strong> 5.0</strong> from 14 Google reviews
+        </div>
+        <div class="bbb">
+          <img src="bbb.webp" alt="BBB Accredited Business" width="120" height="32">
+          BBB Accredited
+        </div>
+        <div><strong>UBI:</strong> 605545572</div>
+      </div>
+    </div>
+
+    <!-- Before / After Gallery -->
+    <section class="gallery">
+      <div class="w">
+        <h2>Real results from local homes</h2>
+        <p class="intro">Moss removal, roof cleaning, hedges, lawns, and hardscape — before and after.</p>
+
+        <div class="ba-grid">
+          <div class="ba-pair">
+            <div class="ba-item">
+              <img src="roof-before-1.webp" alt="Roof covered in heavy moss before cleaning" width="400" height="300" loading="lazy">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-item">
+              <img src="roof-after-1.webp" alt="Clean asphalt shingle roof after moss removal" width="400" height="300" loading="lazy">
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+          <div class="ba-pair">
+            <div class="ba-item">
+              <img src="roof-before-2.webp" alt="Tile roof with debris and moss buildup" width="400" height="300" loading="lazy">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-item">
+              <img src="roof-after-2.webp" alt="Clean tile roof after professional cleaning" width="400" height="300" loading="lazy">
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ba-grid">
+          <div class="ba-pair">
+            <div class="ba-item">
+              <img src="path-before.webp" alt="Side yard path before landscaping" width="400" height="300" loading="lazy">
+              <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-item">
+              <img src="path-after.webp" alt="Finished gravel path with stepping stones" width="400" height="300" loading="lazy">
+              <span class="ba-label">After</span>
+            </div>
+          </div>
+          <div class="ba-pair">
+            <div class="ba-item">
+              <img src="hedge.webp" alt="Professionally shaped hedges" width="400" height="300" loading="lazy">
+              <span class="ba-label">Hedge Trimming</span>
+            </div>
+            <div class="ba-item">
+              <img src="lawn-1.webp" alt="Freshly installed green lawn with play area" width="400" height="300" loading="lazy">
+              <span class="ba-label">New Lawn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <img src="lawn-2.webp" alt="Fresh mulch beds and clean lawn edge" width="360" height="270" loading="lazy">
+          <img src="lawn-3.webp" alt="Courtyard lawn after maintenance" width="360" height="270" loading="lazy">
+          <img src="walk.webp" alt="Front walkway with shaped boxwoods" width="360" height="270" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="w">
+        <h2>What we handle</h2>
+        <div class="s-grid">
+          <div class="s-card">
+            <span class="dot"></span>
+            <div>
+              <h3>Roof &amp; Gutter Cleaning</h3>
+              <p>Moss, algae, and debris removed so your roof lasts longer and looks clean again.</p>
+            </div>
+          </div>
+          <div class="s-card">
+            <span class="dot"></span>
+            <div>
+              <h3>Lawn Care &amp; Yard Maintenance</h3>
+              <p>Mowing, edging, cleanup, and seasonal upkeep that keeps your yard looking sharp.</p>
+            </div>
+          </div>
+          <div class="s-card">
+            <span class="dot"></span>
+            <div>
+              <h3>Tree &amp; Hedge Trimming</h3>
+              <p>Overgrown hedges shaped clean. Trees trimmed for health, safety, and curb appeal.</p>
+            </div>
+          </div>
+          <div class="s-card">
+            <span class="dot"></span>
+            <div>
+              <h3>Pressure Washing</h3>
+              <p>Driveways, sidewalks, siding, and hardscapes restored to look new again.</p>
+            </div>
+          </div>
+          <div class="s-card">
+            <span class="dot"></span>
+            <div>
+              <h3>Planting, Mulching &amp; Beds</h3>
+              <p>Fresh beds, new plantings, and mulch that lasts through the wet Pacific Northwest season.</p>
+            </div>
+          </div>
+          <div class="s-card">
+            <span class="dot"></span>
+            <div>
+              <h3>Tree / Stump Removal &amp; Hauling</h3>
+              <p>Full removal, stump grinding, and debris hauling so nothing is left behind.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+      <div class="w">
+        <h2>What your neighbors say</h2>
+        <p class="rating"><span class="stars">★★★★★</span> <strong>5.0 average</strong> · 14 Google reviews</p>
+        <div class="r-grid">
+          <div class="r-card">
+            <div class="stars">★★★★★</div>
+            <p>“We have hired Jacob and his crew at Clear Cut Landscaping for three jobs and have been extremely happy with every one of them. They are prompt, efficient, reliable, professional, and dependable, with fair pricing and excellent customer service.”</p>
+            <div class="who">— Sue Lowe</div>
+          </div>
+          <div class="r-card">
+            <div class="stars">★★★★★</div>
+            <p>“Jacob &amp; his crew did an amazing job fixing my yard! Communication was great, pricing was fair and upfront, and they were able to start work quickly. I am glad I went with this company &amp; I highly recommend!”</p>
+            <div class="who">— Ashley Seeger</div>
+          </div>
+          <div class="r-card">
+            <div class="stars">★★★★★</div>
+            <p>“Jacobo and his team are absolutely top notch. He is professional, fair, communicative, and honest. He came out next-day to give a quote, and did the first job the very next day. We immediately rehired him.”</p>
+            <div class="who">— Jenn Tullos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <div class="w">
+        <div class="split">
+          <img class="owner-img" src="owner.webp" alt="Jacob, owner of Clear Cut Landscaping" width="120" height="120">
+          <div>
+            <h2>Local. Family-owned. Accountable.</h2>
+            <p>Clear Cut Landscaping LLC is a family-owned team serving Vancouver, WA and the greater Portland area. We show up, do the work right, and leave your property better than we found it.</p>
+            <p>Licensed · Bonded · Insured · BBB Accredited · UBI 605545572</p>
+          </div>
+        </div>
+        <div class="truck">
+          <img src="truck.webp" alt="Clear Cut Landscaping truck and trailer ready for work" width="900" height="400" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Form + Call CTA -->
+    <section class="form-sec" id="quote">
+      <div class="w">
+        <h2>Get your free estimate</h2>
+        <p class="sub">Tell us what you need. We’ll respond fast — usually the same day.</p>
+
+        <div class="form-wrap">
+          <form id="lead-form" action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(971) 555-1234" autocomplete="tel">
+
+            <label for="service">What do you need?</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Roof &amp; Gutter Cleaning</option>
+              <option>Lawn Care / Yard Maintenance</option>
+              <option>Tree or Hedge Trimming</option>
+              <option>Pressure Washing</option>
+              <option>Mulching / Planting / Beds</option>
+              <option>Tree or Stump Removal</option>
+              <option>Multiple services / Other</option>
+            </select>
+
+            <label for="message">Anything else? <span style="font-weight:400;color:#888">(optional)</span></label>
+            <textarea id="message" name="message" placeholder="Address, preferred timing, or details..."></textarea>
+
+            <button type="submit" class="btn-submit">Request Free Estimate</button>
+            <p class="form-note">No spam. No high-pressure sales. Just a clear quote.</p>
+          </form>
+        </div>
+
+        <div class="or-call">
+          <p>Prefer to talk now?</p>
+          <a class="btn-call" href="tel:+19713194486">
+            <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            CALL NOW — (971) 319-4486
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="w">
+      <strong>Clear Cut Landscaping LLC</strong><br>
+      Vancouver, WA · Portland, OR · 98664<br>
+      <a href="tel:+19713194486">(971) 319-4486</a> ·
+      <a href="mailto:clearcutlandscaping85@gmail.com">clearcutlandscaping85@gmail.com</a>
+      <div class="links">Licensed · Bonded · Insured · BBB Accredited · UBI 605545572</div>
+    </div>
+  </footer>
+
+  <!-- Mobile sticky call bar -->
+  <div class="mobile-bar">
+    <a href="tel:+19713194486">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      CALL NOW — (971) 319-4486
+    </a>
+  </div>
+
+  <script>
+    document.getElementById('lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('.btn-submit');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      // Wire this to your form backend / CRM / email notification
+      setTimeout(function() {
+        btn.textContent = 'Got it — we\'ll be in touch!';
+        btn.style.background = '#1a7a32';
+      }, 600);
+    });
+  </script>
+</body>
+</html>
